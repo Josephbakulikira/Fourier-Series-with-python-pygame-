@@ -1,3 +1,9 @@
+"""
+subscribe to my youtube channel
+
+https://www.youtube.com/channel/UCjPk9YDheKst1FlAf_KSpyA
+
+"""
 import pygame
 import random
 import time
@@ -29,7 +35,7 @@ pos_y = 520
 wave_list = []
 offset = 300
 
-ITERATIONS = 2
+ITERATIONS = 5
 
 run=True
 while run:
@@ -63,7 +69,7 @@ while run:
 
     for index in range(len(wave_list)):
         pygame.draw.circle(screen, gray2, (index + pos_x + offset, wave_list[index]), 3)
-    time += 0.05
+    time += 0.01
 
     pygame.display.update()
 
